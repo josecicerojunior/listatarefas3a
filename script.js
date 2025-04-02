@@ -9,6 +9,11 @@ let tarefas = [];
 function addTarefas() {
   if (inputElement.value === "") {
     alert("Digite alguma tarefa!");
+  } else {
+    let novaTarefa = inputElement.value;
+    tarefas.push(novaTarefa);
+    // Limpa o campo input
+    inputElement.value = "";
   }
 }
 buttonElement.onclick = addTarefas;
